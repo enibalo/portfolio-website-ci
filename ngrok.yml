@@ -1,0 +1,11 @@
+version: 3
+
+agent:
+  update_channel: "beta"
+
+endpoints:
+  - name: "http"
+    url: https://wrinkleable-sherley-unsulkily.ngrok-free.dev
+    description: "My portfolio website tunnel"
+    upstream:
+      url: 8080
