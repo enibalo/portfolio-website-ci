@@ -10,7 +10,8 @@ This independent project demonstrates a fully automated CI/CD pipeline for deplo
 * Jenkins
 * AWS EC2
 * Ubuntu Linux
-* Python - BeautifulSoup
+* Python 
+    * BeautifulSoup
 * SCP / SSH
 * HTML & CSS
 
@@ -140,8 +141,8 @@ Tests Pass                          Tests Fail
           | Success Email
           v
 +----------------------------+
-| Deployment Notification    |
-|    Sent to Developer       |
+|   Deployment Notification  |
+|      Sent to Developer     |
 +----------------------------+
 ```
 
