@@ -4,8 +4,6 @@
 
 This independent project demonstrates a fully automated CI/CD pipeline for deploying a static portfolio website using modern DevOps tools and practices. The pipeline continuously monitors a GitHub repository for changes, automatically tests the website code, and deploys validated updates to a production Linux web server.
 
-The solution uses Jenkins hosted on an AWS EC2 Ubuntu instance as the automation server. GitHub webhooks notify Jenkins whenever new code is pushed to the repository. Jenkins then executes automated Python unit tests and HTML validation checks using BeautifulSoup before securely deploying the updated website to the production server using SCP.
-
 ### Technologies Used
 
 * Git & GitHub
@@ -37,15 +35,17 @@ I discovered that the problem was caused by spaces in the Jenkins pipeline name.
 
 ### **Reduced Time Spent on Documentation by 50% Using AI-Assisted Workflows**
 
-Used AI to generate first drafts for project documentation and README files, significantly reducing documentation time while maintaining clarity and structure.
-
 Applied advanced techniques such as iterative prompt refinement, asking AI to critique and improve prompts, and structuring prompts using markdown formatting to improve the response of AI tools.
+
+The effective use of AI tools helped create first drafts for project documentation and README files, significantly reducing documentation time while maintaining clarity and structure.
+
+
 
 ### **Increased Long-Term Productivity By Complying with Best Practices**
 
 According to Atlassia developers can lose up to 10 hours per week searching for missing or unclear information due to poor documentation practices (1). I created architecture diagrams and workflow diagrams to help future engineers quickly understand deployment flow and service dependencies without needing to manually inspect configuration files.
 
-These improvements will make debugging easier, streamlined onboarding for new contributors, and increased the long-term maintainability of the project. 
+These improvements will make debugging easier, streamline onboarding for new contributors, and increase the long-term maintainability of the project. 
 
 # 3. Architecture Diagram
 
