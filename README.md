@@ -59,22 +59,26 @@ These improvements will make debugging easier, streamline onboarding for new con
 +-------------------+
 |     Developer     |
 +-------------------+
-          |
-          | Push Code
-          v
+        |
+        | 
+        v
 +-------------------+
 |      GitHub       |
 +-------------------+
+        |
+        | 
+        v
++--------------------------------------+
+|     AWS EC2 Ubuntu Linux Server      |
+|  +------------------------------+    |
+|  |        Jenkins Server        |    |
+|  |                              |    |
+|  |      Unit tests: Python      |    |
+|  +------------------------------+    |
+|                                      |
++--------------------------------------+
           |
-          | Webhook Trigger
-          v
-+-----------------------------+
-|    AWS EC2 Ubuntu Server  
-  |
-|        - Unit tests         |
-+-----------------------------+
-          |
-          | Deployment
+          | 
           v
 +-----------------------------+
 |       Linux Web Server      |
@@ -100,27 +104,32 @@ These improvements will make debugging easier, streamline onboarding for new con
           |
           | Webhook Trigger
           v
-+----------------------------+
-| Jenkins Pipeline Starts    |
-| on AWS EC2 Ubuntu Server   |
-+----------------------------+
++--------------------------+
+| Jenkins Detects A Change |
++--------------------------+
           |
-          | Clone Repository
+          | 
           v
-+----------------------------+
-| Jenkins Executes Python    |
-| Unit Tests + HTML Checks   |
-+----------------------------+
++--------------------------+
+| Jenkins Pipeline Starts  |
++--------------------------+
+          |  Clone Repository
+          |
+          v
++------------------------+
+|    Jenkins Executes    |
+|       Unit Tests       |
++------------------------+
           |
      +----+-----------------------------+
      |                                  |
 Tests Pass                          Tests Fail
      |                                  |
      v                                  v
-+----------------------+     +----------------------+
-| SCP Deploy Website   |     | Send Failure Email   |
-| to School Linux Host |     | Notification         |
-+----------------------+     +----------------------+
++------------------------+      +----------------------+
+|   SCP Deploy Website   |      |  Send Failure Email  |
+| to School Linux Server |      |     Notification     |
++------------------------+      +----------------------+
           |
           | Update ~/www directory
           v
@@ -132,7 +141,7 @@ Tests Pass                          Tests Fail
           v
 +----------------------------+
 | Deployment Notification    |
-| Sent to Developer          |
+|    Sent to Developer       |
 +----------------------------+
 ```
 
