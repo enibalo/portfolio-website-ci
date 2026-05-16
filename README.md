@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-This independent project demonstrates a fully automated CI/CD pipeline for deploying a static portfolio website using modern DevOps tools and practices. The pipeline continuously monitors a GitHub repository for changes, automatically tests the website code, and deploys validated updates to a production Linux web server.
+This independent project demonstrates a fully automated CI/CD pipeline for deploying a static portfolio website using modern DevOps tools and practices. The pipeline continuously monitors a GitHub repository for changes, automatically tests the website code, and deploys validated updates to a production Linux web server. The portfolio website can be found here: https://cspages.ucalgary.ca/~enioluwafe.balogun/.
 
 ### Technologies Used
 
@@ -12,7 +12,6 @@ This independent project demonstrates a fully automated CI/CD pipeline for deplo
 * Ubuntu Linux
 * Python - BeautifulSoup
 * SCP / SSH
-* Linux Web Server
 * HTML & CSS
 
 ### Key Features
@@ -25,25 +24,32 @@ This independent project demonstrates a fully automated CI/CD pipeline for deplo
 * Production deployment to Linux server
 
 
-# 2. My Accomplisments 
+# 2. My Accomplishments
 
-### **Eliminated A Critical Failure By Discovering a Technical Bug**
+### **Eliminated A Critical Pipeline Failure By Effectively Troubleshooting An Error**
 
-While setting up automated deployments from Jenkins to the web server, the deployment kept failing whenever Jenkins tried to use the stored SSH credentials. To troubleshoot the issue, I reviewed the error logs, checked the SSH agent plugin documentation, and explored the Jenkins file structure to understand how the plugin was creating temporary SSH files.
+The pipeline failed whenever Jenkins tried to use the SSHAgent plugin to push validated changes to production.
 
-I discovered that the problem was caused by spaces in the Jenkins pipeline name. The plugin was generating file paths incorrectly because it could not properly handle the spaces, causing it to look for files that did not exist. I fixed the issue by renaming the project to remove spaces from the pipeline name.
+Based on: 
+1. Learning that the SSHAgent plugin created temporary SSH files by reading the documentation. 
+
+2. Reading the error logs and exploring the Jenkins working directory.
+
+I discovered that the problem was caused by spaces in the Jenkins pipeline name. The name of the pipeline was "Portfolio Pipline", and Jenkins used this name to create files and directories. The error log revealed that the SSHAgent plugin was generating file paths incorrectly because it could not handle files/directories that contained spaces. I fixed the issue by renaming the project to "Portfolio-Pipeline".
 
 ### **Reduced Time Spent on Documentation by 50% Using AI-Assisted Workflows**
 
-Applied advanced techniques such as iterative prompt refinement, asking AI to critique and improve prompts, and structuring prompts using markdown formatting to improve the response of AI tools.
+Used AI tools to create first drafts for project documentation and README files, significantly reducing documentation time while maintaining clarity and structure.
 
-The effective use of AI tools helped create first drafts for project documentation and README files, significantly reducing documentation time while maintaining clarity and structure.
-
+Applied advanced prompt refinement techniques such as:
+1. Iterative improvement.
+2. Asking AI to critique and improve prompts.
+3. Structuring prompts using markdown formatting.
 
 
 ### **Increased Long-Term Productivity By Complying with Best Practices**
 
-According to Atlassia developers can lose up to 10 hours per week searching for missing or unclear information due to poor documentation practices (1). I created architecture diagrams and workflow diagrams to help future engineers quickly understand deployment flow and service dependencies without needing to manually inspect configuration files.
+According to Atlassian's 2025 State of DevEx report, developers can lose up to 10 hours per week searching for missing or unclear information due to poor documentation practices (1). I created an architecture diagram and a workflow diagram to help future engineers quickly understand deployment flow and service dependencies without needing to manually inspect configuration files.
 
 These improvements will make debugging easier, streamline onboarding for new contributors, and increase the long-term maintainability of the project. 
 
