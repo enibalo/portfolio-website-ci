@@ -22,14 +22,32 @@ The solution uses Jenkins hosted on an AWS EC2 Ubuntu instance as the automation
 * Automated CI/CD deployment pipeline
 * GitHub webhook integration
 * Automated HTML validation testing
-* Secure SCP deployment
 * Jenkins email notifications
 * AWS-hosted automation server
 * Production deployment to Linux server
 
----
 
-# 2. Architecture Diagram
+# 2. My Accomplisments 
+
+### **Eliminated A Critical Failure By Discovering a Technical Bug**
+
+While setting up automated deployments from Jenkins to the web server, the deployment kept failing whenever Jenkins tried to use the stored SSH credentials. To troubleshoot the issue, I reviewed the error logs, checked the SSH agent plugin documentation, and explored the Jenkins file structure to understand how the plugin was creating temporary SSH files.
+
+I discovered that the problem was caused by spaces in the Jenkins pipeline name. The plugin was generating file paths incorrectly because it could not properly handle the spaces, causing it to look for files that did not exist. I fixed the issue by renaming the project to remove spaces from the pipeline name.
+
+### **Reduced Time Spent on Documentation by 50% Using AI-Assisted Workflows**
+
+Used AI to generate first drafts for project documentation and README files, significantly reducing documentation time while maintaining clarity and structure.
+
+Applied advanced techniques such as iterative prompt refinement, asking AI to critique and improve prompts, and structuring prompts using markdown formatting to improve the response of AI tools.
+
+### **Increased Long-Term Productivity By Complying with Best Practices**
+
+According to Atlassia developers can lose up to 10 hours per week searching for missing or unclear information due to poor documentation practices (1). I created architecture diagrams and workflow diagrams to help future engineers quickly understand deployment flow and service dependencies without needing to manually inspect configuration files.
+
+These improvements will make debugging easier, streamlined onboarding for new contributors, and increased the long-term maintainability of the project. 
+
+# 3. Architecture Diagram
 
 ```text
 +-------------------+
@@ -112,27 +130,6 @@ Tests Pass                          Tests Fail
 +----------------------------+
 ```
 
+# 4. References 
 
-# 4. My Accomplisments 
-
-**Resolving a Criticial Pipeline Failure**
-
-While setting up automated deployments from Jenkins to my web server using the SSH Agent plugin, the deployment kept failing whenever Jenkins tried to use the stored SSH credentials. To troubleshoot the issue, I reviewed the error logs, checked the plugin documentation, and explored the Jenkins file structure to understand how the plugin was creating temporary SSH files.
-
-I discovered that the problem was caused by spaces in my Jenkins pipeline name. The plugin was generating file paths incorrectly because it could not properly handle the spaces, causing it to look for files that did not exist. I fixed the issue by renaming the project to remove spaces from the pipeline name, which restored successful automated deployments.
-
-**Halving Time For Documentation By 50%**
-
-Looked into the advance techqnies of using AI. Utilized AI to create first-drafts for documentation and README. Creating effective documentaiton 
-
-Used advance technqiues such as: 
-- Asking AI to criticize my prompts 
-- Using README.md notation which AI understands better 
-
-
-**Ensuring Project Longevity and Stability**
-
-Followed indusrry-best practices .
-Created architecture diagrams and workflow diagrams allow other engineers to trace connections and dependencies without digging through config files. 
-
-Useful for debugging and collaboration. 
+1. https://www.itpro.com/software/development/if-software-development-were-an-f1-race-these-inefficiencies-are-the-pit-stops-that-eat-into-lap-time-why-developers-need-to-sharpen-their-focus-on-documentation?utm_source=chatgpt.com
