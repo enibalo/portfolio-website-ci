@@ -1,5 +1,12 @@
 # Portfolio Website CI/CD Pipeline
 
+### **Table of Contents**
+1. [Project Overview](#1-project-overview)
+2. [My Accomplishments](#2-my-accomplishments)
+3. [Architecture Diagram](#3-architecture-diagram)
+4. [Workflow Diagram](#4-work-flow-diagram)
+5. [References](#5-references)
+
 ## 1. Project Overview
 
 This independent project demonstrates a fully automated CI/CD pipeline for deploying a static portfolio website using modern DevOps tools and practices. The pipeline continuously monitors a GitHub repository for changes, automatically tests the website code, and deploys validated updates to a production Linux web server. The portfolio website can be found here: https://cspages.ucalgary.ca/~enioluwafe.balogun/.
@@ -88,7 +95,7 @@ These improvements will make debugging easier, streamline onboarding for new con
 
 ---
 
-# 3. Work Flow Diagram
+# 4. Workflow Diagram
 
 ```text
 +-------------------+
@@ -146,6 +153,6 @@ Tests Pass                          Tests Fail
 +----------------------------+
 ```
 
-# 4. References 
+# 5. References 
 
 1. https://www.itpro.com/software/development/if-software-development-were-an-f1-race-these-inefficiencies-are-the-pit-stops-that-eat-into-lap-time-why-developers-need-to-sharpen-their-focus-on-documentation?utm_source=chatgpt.com
