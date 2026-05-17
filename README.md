@@ -4,7 +4,7 @@
 1. [Project Overview](#1-project-overview)
 2. [My Accomplishments](#2-my-accomplishments)
 3. [Architecture Diagram](#3-architecture-diagram)
-4. [Workflow Diagram](#4-work-flow-diagram)
+4. [Workflow Diagram](#4-workflow-diagram)
 5. [References](#5-references)
 
 ## 1. Project Overview
