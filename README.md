@@ -5,7 +5,6 @@
 2. [My Accomplishments](#2-my-accomplishments)
 3. [Architecture Diagram](#3-architecture-diagram)
 4. [Workflow Diagram](#4-workflow-diagram)
-5. [References](#5-references)
 
 ## 1. Project Overview
 
@@ -57,7 +56,7 @@ Applied advanced prompt refinement techniques such as:
 
 ### **Increased Long-Term Productivity By Complying with Best Practices**
 
-According to Atlassian's 2025 State of DevEx report, developers can lose up to 10 hours per week searching for missing or unclear information due to poor documentation practices (1). I created an architecture diagram and a workflow diagram to help future engineers quickly understand deployment flow and service dependencies without needing to manually inspect configuration files.
+According to [Atlassian's 2025 State of DevEx report](https://www.itpro.com/software/development/if-software-development-were-an-f1-race-these-inefficiencies-are-the-pit-stops-that-eat-into-lap-time-why-developers-need-to-sharpen-their-focus-on-documentation?utm_source=chatgpt.com), developers can lose up to 10 hours per week searching for missing or unclear information due to poor documentation practices. I created an architecture diagram and a workflow diagram to help future engineers quickly understand deployment flow and service dependencies without needing to manually inspect configuration files.
 
 These improvements will make debugging easier, streamline onboarding for new contributors, and increase the long-term maintainability of the project. 
 
@@ -153,6 +152,3 @@ Tests Pass                          Tests Fail
 +----------------------------+
 ```
 
-# 5. References 
-
-1. https://www.itpro.com/software/development/if-software-development-were-an-f1-race-these-inefficiencies-are-the-pit-stops-that-eat-into-lap-time-why-developers-need-to-sharpen-their-focus-on-documentation?utm_source=chatgpt.com
