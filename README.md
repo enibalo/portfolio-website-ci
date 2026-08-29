@@ -20,6 +20,7 @@ This independent project demonstrates a fully automated CI/CD pipeline for deplo
     * BeautifulSoup
 * SCP / SSH
 * HTML & CSS
+* Ngrok
 
 ### Key Features
 
